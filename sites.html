@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_15b3635b94e8f3c83eae4a9d833b7860 {
+                #map_97f49c4154ee76d60b32bfbf547d9bff {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,18 +39,18 @@
 <body>
     
     
-            <div class="folium-map" id="map_15b3635b94e8f3c83eae4a9d833b7860" ></div>
+            <div class="folium-map" id="map_97f49c4154ee76d60b32bfbf547d9bff" ></div>
         
 </body>
 <script>
     
     
-            var map_15b3635b94e8f3c83eae4a9d833b7860 = L.map(
-                "map_15b3635b94e8f3c83eae4a9d833b7860",
+            var map_97f49c4154ee76d60b32bfbf547d9bff = L.map(
+                "map_97f49c4154ee76d60b32bfbf547d9bff",
                 {
                     center: [37.7930574171457, -122.40026471803202],
                     crs: L.CRS.EPSG3857,
-                    zoom: 12,
+                    zoom: 13,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -60,430 +60,646 @@
 
         
     
-            var tile_layer_4441eed4d8cb956113ce9129e2694c58 = L.tileLayer(
+            var tile_layer_c2acb0f41e3ec2bb1b0d3fd64477ecad = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
             );
         
     
-            tile_layer_4441eed4d8cb956113ce9129e2694c58.addTo(map_15b3635b94e8f3c83eae4a9d833b7860);
+            tile_layer_c2acb0f41e3ec2bb1b0d3fd64477ecad.addTo(map_97f49c4154ee76d60b32bfbf547d9bff);
         
     
-            var marker_8f6ac6fcb541b8ae05deb4244cb9d23d = L.marker(
+            var marker_1834f4df16f33506b55222cc976f1515 = L.marker(
                 [37.7930574171457, -122.400264718032],
                 {}
-            ).addTo(map_15b3635b94e8f3c83eae4a9d833b7860);
+            ).addTo(map_97f49c4154ee76d60b32bfbf547d9bff);
         
     
-            var icon_867e2a624be80072df56ff67a3ad144c = L.AwesomeMarkers.icon(
+            var icon_fcb4740459e22719fbc18402e75bd78a = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_8f6ac6fcb541b8ae05deb4244cb9d23d.setIcon(icon_867e2a624be80072df56ff67a3ad144c);
+            marker_1834f4df16f33506b55222cc976f1515.setIcon(icon_fcb4740459e22719fbc18402e75bd78a);
         
     
-        var popup_9621c07bce557a78c7071ddf16ddd675 = L.popup({"maxWidth": 300});
-
-        
-            
-                var html_7ca3e7897563bb7ea743050d7d27fbc1 = $(`<div id="html_7ca3e7897563bb7ea743050d7d27fbc1" style="width: 100.0%; height: 100.0%;">         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
-                popup_9621c07bce557a78c7071ddf16ddd675.setContent(html_7ca3e7897563bb7ea743050d7d27fbc1);
-            
-        
-
-        marker_8f6ac6fcb541b8ae05deb4244cb9d23d.bindPopup(popup_9621c07bce557a78c7071ddf16ddd675)
-        ;
-
-        
-    
-    
-            marker_8f6ac6fcb541b8ae05deb4244cb9d23d.bindTooltip(
+            marker_1834f4df16f33506b55222cc976f1515.bindTooltip(
                 `<div>
-                     Masonic Garage: 111 California St
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333;">
+            <!-- Image at the top -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/Masonic%20Garage/Site%20Image.png" width="300px" alt="Charger Image">
+            </div>
+
+            <!-- Header (ModelID) below the image -->
+            <div style="text-align: left; font-size: 18px; font-weight: bold">
+                Masonic Garage
+            </div>
+
+            <!-- Address -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: grey;">
+                    1111 California St, San Francisco, CA 94108
+                </span>
+            </div>
+
+            <!-- Bullets -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: green;">
+                    100.0% Functional
+                </span>&nbsp;•&nbsp;
+                12 Chargers&nbsp;•&nbsp;
+                12 Ports
+            </div>
+
+            <!-- Bar Chart -->
+            <div style="text-align: center; margin-top: 10px;">
+                <img src="data:image/png;base64,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" width="250px" alt="AC/DC Split Bar Chart">
+            </div>
+        </div>
+        
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_f5f0a73af0b82a6f8688125363e5cb70 = L.marker(
+            var marker_719db008b0f494a71e3b9877433518bb = L.marker(
                 [37.7930574171457, -122.400264718032],
                 {}
-            ).addTo(map_15b3635b94e8f3c83eae4a9d833b7860);
+            ).addTo(map_97f49c4154ee76d60b32bfbf547d9bff);
         
     
-            var icon_55843d4e9c6b6c04b49963dd2c4fae14 = L.AwesomeMarkers.icon(
+            var icon_9f8b8c73d71997c6f46f5f9b9de04823 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_f5f0a73af0b82a6f8688125363e5cb70.setIcon(icon_55843d4e9c6b6c04b49963dd2c4fae14);
+            marker_719db008b0f494a71e3b9877433518bb.setIcon(icon_9f8b8c73d71997c6f46f5f9b9de04823);
         
     
-        var popup_8b218f82bcc7b206ed1048287ac2b316 = L.popup({"maxWidth": 300});
-
-        
-            
-                var html_8beb9c74f4fe2c03d382a1a7421572ee = $(`<div id="html_8beb9c74f4fe2c03d382a1a7421572ee" style="width: 100.0%; height: 100.0%;">         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
-                popup_8b218f82bcc7b206ed1048287ac2b316.setContent(html_8beb9c74f4fe2c03d382a1a7421572ee);
-            
-        
-
-        marker_f5f0a73af0b82a6f8688125363e5cb70.bindPopup(popup_8b218f82bcc7b206ed1048287ac2b316)
-        ;
-
-        
-    
-    
-            marker_f5f0a73af0b82a6f8688125363e5cb70.bindTooltip(
+            marker_719db008b0f494a71e3b9877433518bb.bindTooltip(
                 `<div>
-                     Masonic Garage: 111 California St
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333;">
+            <!-- Image at the top -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/Masonic%20Garage/Site%20Image.png" width="300px" alt="Charger Image">
+            </div>
+
+            <!-- Header (ModelID) below the image -->
+            <div style="text-align: left; font-size: 18px; font-weight: bold">
+                Masonic Garage
+            </div>
+
+            <!-- Address -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: grey;">
+                    1111 California St, San Francisco, CA 94108
+                </span>
+            </div>
+
+            <!-- Bullets -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: green;">
+                    100.0% Functional
+                </span>&nbsp;•&nbsp;
+                12 Chargers&nbsp;•&nbsp;
+                12 Ports
+            </div>
+
+            <!-- Bar Chart -->
+            <div style="text-align: center; margin-top: 10px;">
+                <img src="data:image/png;base64,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" width="250px" alt="AC/DC Split Bar Chart">
+            </div>
+        </div>
+        
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_19fa24755ef86487a908988f6773f73f = L.marker(
+            var marker_35b8b45a5e5436ef8c1c3c5872a384de = L.marker(
                 [37.7930574171457, -122.400264718032],
                 {}
-            ).addTo(map_15b3635b94e8f3c83eae4a9d833b7860);
+            ).addTo(map_97f49c4154ee76d60b32bfbf547d9bff);
         
     
-            var icon_109977404a775f8be7b3135188fb44e3 = L.AwesomeMarkers.icon(
+            var icon_7da7d4a46c3758825a9afefe294459ef = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_19fa24755ef86487a908988f6773f73f.setIcon(icon_109977404a775f8be7b3135188fb44e3);
+            marker_35b8b45a5e5436ef8c1c3c5872a384de.setIcon(icon_7da7d4a46c3758825a9afefe294459ef);
         
     
-        var popup_4f8cc2a5dbdf9d3baa35f23c62a692d9 = L.popup({"maxWidth": 300});
-
-        
-            
-                var html_fa7c20d0a191d5587a79c83e551e6a29 = $(`<div id="html_fa7c20d0a191d5587a79c83e551e6a29" style="width: 100.0%; height: 100.0%;">         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
-                popup_4f8cc2a5dbdf9d3baa35f23c62a692d9.setContent(html_fa7c20d0a191d5587a79c83e551e6a29);
-            
-        
-
-        marker_19fa24755ef86487a908988f6773f73f.bindPopup(popup_4f8cc2a5dbdf9d3baa35f23c62a692d9)
-        ;
-
-        
-    
-    
-            marker_19fa24755ef86487a908988f6773f73f.bindTooltip(
+            marker_35b8b45a5e5436ef8c1c3c5872a384de.bindTooltip(
                 `<div>
-                     Masonic Garage: 111 California St
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333;">
+            <!-- Image at the top -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/Masonic%20Garage/Site%20Image.png" width="300px" alt="Charger Image">
+            </div>
+
+            <!-- Header (ModelID) below the image -->
+            <div style="text-align: left; font-size: 18px; font-weight: bold">
+                Masonic Garage
+            </div>
+
+            <!-- Address -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: grey;">
+                    1111 California St, San Francisco, CA 94108
+                </span>
+            </div>
+
+            <!-- Bullets -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: green;">
+                    100.0% Functional
+                </span>&nbsp;•&nbsp;
+                12 Chargers&nbsp;•&nbsp;
+                12 Ports
+            </div>
+
+            <!-- Bar Chart -->
+            <div style="text-align: center; margin-top: 10px;">
+                <img src="data:image/png;base64,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" width="250px" alt="AC/DC Split Bar Chart">
+            </div>
+        </div>
+        
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_868b3e871bc7b1bf3a925014a9476734 = L.marker(
+            var marker_7bdb14e009bf29440ef5bd43e7a0d8dd = L.marker(
                 [37.7930574171457, -122.400264718032],
                 {}
-            ).addTo(map_15b3635b94e8f3c83eae4a9d833b7860);
+            ).addTo(map_97f49c4154ee76d60b32bfbf547d9bff);
         
     
-            var icon_227f7352392f1b2609b2339915c46088 = L.AwesomeMarkers.icon(
+            var icon_6e0fe5b9cd0c70ee8ce31db4e9bec4c9 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_868b3e871bc7b1bf3a925014a9476734.setIcon(icon_227f7352392f1b2609b2339915c46088);
+            marker_7bdb14e009bf29440ef5bd43e7a0d8dd.setIcon(icon_6e0fe5b9cd0c70ee8ce31db4e9bec4c9);
         
     
-        var popup_9ae18cd8f7e650587d691cf2709e3e30 = L.popup({"maxWidth": 300});
-
-        
-            
-                var html_90a977dffb8774a85907e993943ad535 = $(`<div id="html_90a977dffb8774a85907e993943ad535" style="width: 100.0%; height: 100.0%;">         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
-                popup_9ae18cd8f7e650587d691cf2709e3e30.setContent(html_90a977dffb8774a85907e993943ad535);
-            
-        
-
-        marker_868b3e871bc7b1bf3a925014a9476734.bindPopup(popup_9ae18cd8f7e650587d691cf2709e3e30)
-        ;
-
-        
-    
-    
-            marker_868b3e871bc7b1bf3a925014a9476734.bindTooltip(
+            marker_7bdb14e009bf29440ef5bd43e7a0d8dd.bindTooltip(
                 `<div>
-                     Masonic Garage: 111 California St
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333;">
+            <!-- Image at the top -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/Masonic%20Garage/Site%20Image.png" width="300px" alt="Charger Image">
+            </div>
+
+            <!-- Header (ModelID) below the image -->
+            <div style="text-align: left; font-size: 18px; font-weight: bold">
+                Masonic Garage
+            </div>
+
+            <!-- Address -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: grey;">
+                    1111 California St, San Francisco, CA 94108
+                </span>
+            </div>
+
+            <!-- Bullets -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: green;">
+                    100.0% Functional
+                </span>&nbsp;•&nbsp;
+                12 Chargers&nbsp;•&nbsp;
+                12 Ports
+            </div>
+
+            <!-- Bar Chart -->
+            <div style="text-align: center; margin-top: 10px;">
+                <img src="data:image/png;base64,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" width="250px" alt="AC/DC Split Bar Chart">
+            </div>
+        </div>
+        
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_9abfd38167a1f5f1b9f404fb54f193a7 = L.marker(
+            var marker_c63e3f919f3decece1d025ddc8c81025 = L.marker(
                 [37.7930574171457, -122.400264718032],
                 {}
-            ).addTo(map_15b3635b94e8f3c83eae4a9d833b7860);
+            ).addTo(map_97f49c4154ee76d60b32bfbf547d9bff);
         
     
-            var icon_b02337bd231bb74400cd779d570d6203 = L.AwesomeMarkers.icon(
+            var icon_50f6036f58611a1af6a3a1fb5e85f394 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_9abfd38167a1f5f1b9f404fb54f193a7.setIcon(icon_b02337bd231bb74400cd779d570d6203);
+            marker_c63e3f919f3decece1d025ddc8c81025.setIcon(icon_50f6036f58611a1af6a3a1fb5e85f394);
         
     
-        var popup_43ce1b9e0abbe2a46f0452631d7f6f12 = L.popup({"maxWidth": 300});
-
-        
-            
-                var html_3631b8b3e1f79e84d9b2e2c35a6c8d07 = $(`<div id="html_3631b8b3e1f79e84d9b2e2c35a6c8d07" style="width: 100.0%; height: 100.0%;">         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
-                popup_43ce1b9e0abbe2a46f0452631d7f6f12.setContent(html_3631b8b3e1f79e84d9b2e2c35a6c8d07);
-            
-        
-
-        marker_9abfd38167a1f5f1b9f404fb54f193a7.bindPopup(popup_43ce1b9e0abbe2a46f0452631d7f6f12)
-        ;
-
-        
-    
-    
-            marker_9abfd38167a1f5f1b9f404fb54f193a7.bindTooltip(
+            marker_c63e3f919f3decece1d025ddc8c81025.bindTooltip(
                 `<div>
-                     Masonic Garage: 111 California St
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333;">
+            <!-- Image at the top -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/Masonic%20Garage/Site%20Image.png" width="300px" alt="Charger Image">
+            </div>
+
+            <!-- Header (ModelID) below the image -->
+            <div style="text-align: left; font-size: 18px; font-weight: bold">
+                Masonic Garage
+            </div>
+
+            <!-- Address -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: grey;">
+                    1111 California St, San Francisco, CA 94108
+                </span>
+            </div>
+
+            <!-- Bullets -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: green;">
+                    100.0% Functional
+                </span>&nbsp;•&nbsp;
+                12 Chargers&nbsp;•&nbsp;
+                12 Ports
+            </div>
+
+            <!-- Bar Chart -->
+            <div style="text-align: center; margin-top: 10px;">
+                <img src="data:image/png;base64,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" width="250px" alt="AC/DC Split Bar Chart">
+            </div>
+        </div>
+        
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_7fcc301d6d5f9dd38ecfeb574d04f0ae = L.marker(
+            var marker_ed6d9784b02428dcd4c31b94ae746f6b = L.marker(
                 [37.7930574171457, -122.400264718032],
                 {}
-            ).addTo(map_15b3635b94e8f3c83eae4a9d833b7860);
+            ).addTo(map_97f49c4154ee76d60b32bfbf547d9bff);
         
     
-            var icon_4792b1da2d3f7caf5d6326255868450d = L.AwesomeMarkers.icon(
+            var icon_9e5c3d59d198e177424acd2ced855181 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_7fcc301d6d5f9dd38ecfeb574d04f0ae.setIcon(icon_4792b1da2d3f7caf5d6326255868450d);
+            marker_ed6d9784b02428dcd4c31b94ae746f6b.setIcon(icon_9e5c3d59d198e177424acd2ced855181);
         
     
-        var popup_5c8410bc7ffffec6045fc5fd3175398b = L.popup({"maxWidth": 300});
-
-        
-            
-                var html_565e8b23ebf3ae1ca79983b19ff9e1a6 = $(`<div id="html_565e8b23ebf3ae1ca79983b19ff9e1a6" style="width: 100.0%; height: 100.0%;">         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
-                popup_5c8410bc7ffffec6045fc5fd3175398b.setContent(html_565e8b23ebf3ae1ca79983b19ff9e1a6);
-            
-        
-
-        marker_7fcc301d6d5f9dd38ecfeb574d04f0ae.bindPopup(popup_5c8410bc7ffffec6045fc5fd3175398b)
-        ;
-
-        
-    
-    
-            marker_7fcc301d6d5f9dd38ecfeb574d04f0ae.bindTooltip(
+            marker_ed6d9784b02428dcd4c31b94ae746f6b.bindTooltip(
                 `<div>
-                     Masonic Garage: 111 California St
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333;">
+            <!-- Image at the top -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/Masonic%20Garage/Site%20Image.png" width="300px" alt="Charger Image">
+            </div>
+
+            <!-- Header (ModelID) below the image -->
+            <div style="text-align: left; font-size: 18px; font-weight: bold">
+                Masonic Garage
+            </div>
+
+            <!-- Address -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: grey;">
+                    1111 California St, San Francisco, CA 94108
+                </span>
+            </div>
+
+            <!-- Bullets -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: green;">
+                    100.0% Functional
+                </span>&nbsp;•&nbsp;
+                12 Chargers&nbsp;•&nbsp;
+                12 Ports
+            </div>
+
+            <!-- Bar Chart -->
+            <div style="text-align: center; margin-top: 10px;">
+                <img src="data:image/png;base64,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" width="250px" alt="AC/DC Split Bar Chart">
+            </div>
+        </div>
+        
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_3654d26527e03b1279eacf35ea1756a7 = L.marker(
+            var marker_387ab6f5d5d7dbce0bbc9173201d16db = L.marker(
                 [37.7930574171457, -122.400264718032],
                 {}
-            ).addTo(map_15b3635b94e8f3c83eae4a9d833b7860);
+            ).addTo(map_97f49c4154ee76d60b32bfbf547d9bff);
         
     
-            var icon_6d77f378b4625b581a8a9488f74c2ec2 = L.AwesomeMarkers.icon(
+            var icon_717c0fa266f32a126f011d488d143ca1 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_3654d26527e03b1279eacf35ea1756a7.setIcon(icon_6d77f378b4625b581a8a9488f74c2ec2);
+            marker_387ab6f5d5d7dbce0bbc9173201d16db.setIcon(icon_717c0fa266f32a126f011d488d143ca1);
         
     
-        var popup_12f220d73b2e415a03c1f778901d7de3 = L.popup({"maxWidth": 300});
-
-        
-            
-                var html_685252c34bdfdeb67a4e5356f9298281 = $(`<div id="html_685252c34bdfdeb67a4e5356f9298281" style="width: 100.0%; height: 100.0%;">         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
-                popup_12f220d73b2e415a03c1f778901d7de3.setContent(html_685252c34bdfdeb67a4e5356f9298281);
-            
-        
-
-        marker_3654d26527e03b1279eacf35ea1756a7.bindPopup(popup_12f220d73b2e415a03c1f778901d7de3)
-        ;
-
-        
-    
-    
-            marker_3654d26527e03b1279eacf35ea1756a7.bindTooltip(
+            marker_387ab6f5d5d7dbce0bbc9173201d16db.bindTooltip(
                 `<div>
-                     Masonic Garage: 111 California St
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333;">
+            <!-- Image at the top -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/Masonic%20Garage/Site%20Image.png" width="300px" alt="Charger Image">
+            </div>
+
+            <!-- Header (ModelID) below the image -->
+            <div style="text-align: left; font-size: 18px; font-weight: bold">
+                Masonic Garage
+            </div>
+
+            <!-- Address -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: grey;">
+                    1111 California St, San Francisco, CA 94108
+                </span>
+            </div>
+
+            <!-- Bullets -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: green;">
+                    100.0% Functional
+                </span>&nbsp;•&nbsp;
+                12 Chargers&nbsp;•&nbsp;
+                12 Ports
+            </div>
+
+            <!-- Bar Chart -->
+            <div style="text-align: center; margin-top: 10px;">
+                <img src="data:image/png;base64,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" width="250px" alt="AC/DC Split Bar Chart">
+            </div>
+        </div>
+        
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_f22f91a5adce520b8d4340ea5fe61b53 = L.marker(
+            var marker_fe3692c4800235acba95d0ec6bc1c557 = L.marker(
                 [37.7930574171457, -122.400264718032],
                 {}
-            ).addTo(map_15b3635b94e8f3c83eae4a9d833b7860);
+            ).addTo(map_97f49c4154ee76d60b32bfbf547d9bff);
         
     
-            var icon_d03858fc9f2280aaa162c3fb9733952f = L.AwesomeMarkers.icon(
+            var icon_f4c74c4f3dadbf55ad8b2becf211c1a1 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_f22f91a5adce520b8d4340ea5fe61b53.setIcon(icon_d03858fc9f2280aaa162c3fb9733952f);
+            marker_fe3692c4800235acba95d0ec6bc1c557.setIcon(icon_f4c74c4f3dadbf55ad8b2becf211c1a1);
         
     
-        var popup_55ac2d593f857d2975677e88eec39f01 = L.popup({"maxWidth": 300});
-
-        
-            
-                var html_6e27a5d72ccba2c85bae73dfe8a650dc = $(`<div id="html_6e27a5d72ccba2c85bae73dfe8a650dc" style="width: 100.0%; height: 100.0%;">         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
-                popup_55ac2d593f857d2975677e88eec39f01.setContent(html_6e27a5d72ccba2c85bae73dfe8a650dc);
-            
-        
-
-        marker_f22f91a5adce520b8d4340ea5fe61b53.bindPopup(popup_55ac2d593f857d2975677e88eec39f01)
-        ;
-
-        
-    
-    
-            marker_f22f91a5adce520b8d4340ea5fe61b53.bindTooltip(
+            marker_fe3692c4800235acba95d0ec6bc1c557.bindTooltip(
                 `<div>
-                     Masonic Garage: 111 California St
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333;">
+            <!-- Image at the top -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/Masonic%20Garage/Site%20Image.png" width="300px" alt="Charger Image">
+            </div>
+
+            <!-- Header (ModelID) below the image -->
+            <div style="text-align: left; font-size: 18px; font-weight: bold">
+                Masonic Garage
+            </div>
+
+            <!-- Address -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: grey;">
+                    1111 California St, San Francisco, CA 94108
+                </span>
+            </div>
+
+            <!-- Bullets -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: green;">
+                    100.0% Functional
+                </span>&nbsp;•&nbsp;
+                12 Chargers&nbsp;•&nbsp;
+                12 Ports
+            </div>
+
+            <!-- Bar Chart -->
+            <div style="text-align: center; margin-top: 10px;">
+                <img src="data:image/png;base64,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" width="250px" alt="AC/DC Split Bar Chart">
+            </div>
+        </div>
+        
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_7bb31fa0021c075d39ccdd4d8cfb6616 = L.marker(
+            var marker_f45c1ac5bfa2b646b43491dda8e81256 = L.marker(
                 [37.7930574171457, -122.400264718032],
                 {}
-            ).addTo(map_15b3635b94e8f3c83eae4a9d833b7860);
+            ).addTo(map_97f49c4154ee76d60b32bfbf547d9bff);
         
     
-            var icon_e68cee61aa82ef33f32cb44d191bb1b1 = L.AwesomeMarkers.icon(
+            var icon_296a27a6e5423d26b537e1f8e19ca220 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_7bb31fa0021c075d39ccdd4d8cfb6616.setIcon(icon_e68cee61aa82ef33f32cb44d191bb1b1);
+            marker_f45c1ac5bfa2b646b43491dda8e81256.setIcon(icon_296a27a6e5423d26b537e1f8e19ca220);
         
     
-        var popup_a48365de8fa899499e8ae2491573e839 = L.popup({"maxWidth": 300});
-
-        
-            
-                var html_792af0a3aae0e6c60a4cc62fb1229533 = $(`<div id="html_792af0a3aae0e6c60a4cc62fb1229533" style="width: 100.0%; height: 100.0%;">         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
-                popup_a48365de8fa899499e8ae2491573e839.setContent(html_792af0a3aae0e6c60a4cc62fb1229533);
-            
-        
-
-        marker_7bb31fa0021c075d39ccdd4d8cfb6616.bindPopup(popup_a48365de8fa899499e8ae2491573e839)
-        ;
-
-        
-    
-    
-            marker_7bb31fa0021c075d39ccdd4d8cfb6616.bindTooltip(
+            marker_f45c1ac5bfa2b646b43491dda8e81256.bindTooltip(
                 `<div>
-                     Masonic Garage: 111 California St
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333;">
+            <!-- Image at the top -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/Masonic%20Garage/Site%20Image.png" width="300px" alt="Charger Image">
+            </div>
+
+            <!-- Header (ModelID) below the image -->
+            <div style="text-align: left; font-size: 18px; font-weight: bold">
+                Masonic Garage
+            </div>
+
+            <!-- Address -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: grey;">
+                    1111 California St, San Francisco, CA 94108
+                </span>
+            </div>
+
+            <!-- Bullets -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: green;">
+                    100.0% Functional
+                </span>&nbsp;•&nbsp;
+                12 Chargers&nbsp;•&nbsp;
+                12 Ports
+            </div>
+
+            <!-- Bar Chart -->
+            <div style="text-align: center; margin-top: 10px;">
+                <img src="data:image/png;base64,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" width="250px" alt="AC/DC Split Bar Chart">
+            </div>
+        </div>
+        
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_913ca7157ddff562e56242141283ec77 = L.marker(
+            var marker_4a24be3175716f1bc6a054f68d878fac = L.marker(
                 [37.7930574171457, -122.400264718032],
                 {}
-            ).addTo(map_15b3635b94e8f3c83eae4a9d833b7860);
+            ).addTo(map_97f49c4154ee76d60b32bfbf547d9bff);
         
     
-            var icon_e6ef69c0ce37407dd8b262dd9b0c681a = L.AwesomeMarkers.icon(
+            var icon_25a4e90fa2c54b358cc3d2f599962ab2 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_913ca7157ddff562e56242141283ec77.setIcon(icon_e6ef69c0ce37407dd8b262dd9b0c681a);
+            marker_4a24be3175716f1bc6a054f68d878fac.setIcon(icon_25a4e90fa2c54b358cc3d2f599962ab2);
         
     
-        var popup_05ca496402740802f4ad7aa791e8c307 = L.popup({"maxWidth": 300});
-
-        
-            
-                var html_32eaa570079a17a62c3a3e93f5923f73 = $(`<div id="html_32eaa570079a17a62c3a3e93f5923f73" style="width: 100.0%; height: 100.0%;">         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
-                popup_05ca496402740802f4ad7aa791e8c307.setContent(html_32eaa570079a17a62c3a3e93f5923f73);
-            
-        
-
-        marker_913ca7157ddff562e56242141283ec77.bindPopup(popup_05ca496402740802f4ad7aa791e8c307)
-        ;
-
-        
-    
-    
-            marker_913ca7157ddff562e56242141283ec77.bindTooltip(
+            marker_4a24be3175716f1bc6a054f68d878fac.bindTooltip(
                 `<div>
-                     Masonic Garage: 111 California St
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333;">
+            <!-- Image at the top -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/Masonic%20Garage/Site%20Image.png" width="300px" alt="Charger Image">
+            </div>
+
+            <!-- Header (ModelID) below the image -->
+            <div style="text-align: left; font-size: 18px; font-weight: bold">
+                Masonic Garage
+            </div>
+
+            <!-- Address -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: grey;">
+                    1111 California St, San Francisco, CA 94108
+                </span>
+            </div>
+
+            <!-- Bullets -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: green;">
+                    100.0% Functional
+                </span>&nbsp;•&nbsp;
+                12 Chargers&nbsp;•&nbsp;
+                12 Ports
+            </div>
+
+            <!-- Bar Chart -->
+            <div style="text-align: center; margin-top: 10px;">
+                <img src="data:image/png;base64,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" width="250px" alt="AC/DC Split Bar Chart">
+            </div>
+        </div>
+        
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_b55c48d64f476630e9e2b88dbe61d718 = L.marker(
+            var marker_c6a8132a19a9463b044a4a6b2dc30ed8 = L.marker(
                 [37.7930574171457, -122.400264718032],
                 {}
-            ).addTo(map_15b3635b94e8f3c83eae4a9d833b7860);
+            ).addTo(map_97f49c4154ee76d60b32bfbf547d9bff);
         
     
-            var icon_491cf9d045fe28c6e78b3e5c5f17fb75 = L.AwesomeMarkers.icon(
+            var icon_a3f7097d5be9d3ff6f952f44ca24290a = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_b55c48d64f476630e9e2b88dbe61d718.setIcon(icon_491cf9d045fe28c6e78b3e5c5f17fb75);
+            marker_c6a8132a19a9463b044a4a6b2dc30ed8.setIcon(icon_a3f7097d5be9d3ff6f952f44ca24290a);
         
     
-        var popup_59661808bd79cbea0411eb06c71b766a = L.popup({"maxWidth": 300});
-
-        
-            
-                var html_7874d078cec637595c7560d818ce050b = $(`<div id="html_7874d078cec637595c7560d818ce050b" style="width: 100.0%; height: 100.0%;">         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
-                popup_59661808bd79cbea0411eb06c71b766a.setContent(html_7874d078cec637595c7560d818ce050b);
-            
-        
-
-        marker_b55c48d64f476630e9e2b88dbe61d718.bindPopup(popup_59661808bd79cbea0411eb06c71b766a)
-        ;
-
-        
-    
-    
-            marker_b55c48d64f476630e9e2b88dbe61d718.bindTooltip(
+            marker_c6a8132a19a9463b044a4a6b2dc30ed8.bindTooltip(
                 `<div>
-                     Masonic Garage: 111 California St
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333;">
+            <!-- Image at the top -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/Masonic%20Garage/Site%20Image.png" width="300px" alt="Charger Image">
+            </div>
+
+            <!-- Header (ModelID) below the image -->
+            <div style="text-align: left; font-size: 18px; font-weight: bold">
+                Masonic Garage
+            </div>
+
+            <!-- Address -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: grey;">
+                    1111 California St, San Francisco, CA 94108
+                </span>
+            </div>
+
+            <!-- Bullets -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: green;">
+                    100.0% Functional
+                </span>&nbsp;•&nbsp;
+                12 Chargers&nbsp;•&nbsp;
+                12 Ports
+            </div>
+
+            <!-- Bar Chart -->
+            <div style="text-align: center; margin-top: 10px;">
+                <img src="data:image/png;base64,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" width="250px" alt="AC/DC Split Bar Chart">
+            </div>
+        </div>
+        
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_4b2b49be2b475ee5b27766c13a63c075 = L.marker(
+            var marker_ff5fc34e37edcc4a0998aac656e52641 = L.marker(
                 [37.7930574171457, -122.400264718032],
                 {}
-            ).addTo(map_15b3635b94e8f3c83eae4a9d833b7860);
+            ).addTo(map_97f49c4154ee76d60b32bfbf547d9bff);
         
     
-            var icon_b00d7de5bb0a61fb6eacc97c3a0dae5f = L.AwesomeMarkers.icon(
+            var icon_fcb214a8f7708a96eaea130b84792433 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_4b2b49be2b475ee5b27766c13a63c075.setIcon(icon_b00d7de5bb0a61fb6eacc97c3a0dae5f);
+            marker_ff5fc34e37edcc4a0998aac656e52641.setIcon(icon_fcb214a8f7708a96eaea130b84792433);
         
     
-        var popup_ee4aaf03cea48aacbf4bdcc853c99dff = L.popup({"maxWidth": 300});
-
-        
-            
-                var html_2a14bd52a9fafe391be8591f25fa7f89 = $(`<div id="html_2a14bd52a9fafe391be8591f25fa7f89" style="width: 100.0%; height: 100.0%;">         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
-                popup_ee4aaf03cea48aacbf4bdcc853c99dff.setContent(html_2a14bd52a9fafe391be8591f25fa7f89);
-            
-        
-
-        marker_4b2b49be2b475ee5b27766c13a63c075.bindPopup(popup_ee4aaf03cea48aacbf4bdcc853c99dff)
-        ;
-
-        
-    
-    
-            marker_4b2b49be2b475ee5b27766c13a63c075.bindTooltip(
+            marker_ff5fc34e37edcc4a0998aac656e52641.bindTooltip(
                 `<div>
-                     Masonic Garage: 111 California St
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333;">
+            <!-- Image at the top -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/Masonic%20Garage/Site%20Image.png" width="300px" alt="Charger Image">
+            </div>
+
+            <!-- Header (ModelID) below the image -->
+            <div style="text-align: left; font-size: 18px; font-weight: bold">
+                Masonic Garage
+            </div>
+
+            <!-- Address -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: grey;">
+                    1111 California St, San Francisco, CA 94108
+                </span>
+            </div>
+
+            <!-- Bullets -->
+            <div style="font-size: 14px; color: #555;">
+                <span style="color: green;">
+                    100.0% Functional
+                </span>&nbsp;•&nbsp;
+                12 Chargers&nbsp;•&nbsp;
+                12 Ports
+            </div>
+
+            <!-- Bar Chart -->
+            <div style="text-align: center; margin-top: 10px;">
+                <img src="data:image/png;base64,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" width="250px" alt="AC/DC Split Bar Chart">
+            </div>
+        </div>
+        
                  </div>`,
                 {"sticky": true}
             );
