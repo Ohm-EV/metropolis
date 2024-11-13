@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_154d0aa0774e5ccb912d95faeb4e806d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_154d0aa0774e5ccb912d95faeb4e806d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_154d0aa0774e5ccb912d95faeb4e806d = L.map(
+                "map_154d0aa0774e5ccb912d95faeb4e806d",
+                {
+                    center: [37.7930574171457, -122.40026471803202],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6a5404ff7a99c5cbbd485dadd56ffd91 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_6a5404ff7a99c5cbbd485dadd56ffd91.addTo(map_154d0aa0774e5ccb912d95faeb4e806d);
+        
+    
+            var marker_c188870eed7e1a63b711767ac0b7470f = L.marker(
+                [37.79302543236424, -122.40025113519295],
+                {}
+            ).addTo(map_154d0aa0774e5ccb912d95faeb4e806d);
+        
+    
+            var icon_dde3e484d99b06d117b8ba8d3e7ef2ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c188870eed7e1a63b711767ac0b7470f.setIcon(icon_dde3e484d99b06d117b8ba8d3e7ef2ca);
+        
+    
+            marker_c188870eed7e1a63b711767ac0b7470f.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/drive-download-20241112T212046Z-001/IMG_8795.jpeg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Volta DC Fast 150kw</span> (2B95-04)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    DC &nbsp;•&nbsp;
+                    150.0kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://www.cambriancards.com/wp-content/uploads/2020/11/shell-recharge-logo.png" style="max-height: 80px; max-width: 100%;" alt="Shell Recharge">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a94b35a1369816a6d73a8b52cd6d39da = L.marker(
+                [37.793037155751406, -122.40026545617128],
+                {}
+            ).addTo(map_154d0aa0774e5ccb912d95faeb4e806d);
+        
+    
+            var icon_78c8d2ba7816963786333bdd9568bdbc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a94b35a1369816a6d73a8b52cd6d39da.setIcon(icon_78c8d2ba7816963786333bdd9568bdbc);
+        
+    
+            marker_a94b35a1369816a6d73a8b52cd6d39da.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/drive-download-20241112T212046Z-001/IMG_0402.HEIC" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Volta DC Fast 150kw</span> (2B95-02)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    DC &nbsp;•&nbsp;
+                    150.0kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://www.cambriancards.com/wp-content/uploads/2020/11/shell-recharge-logo.png" style="max-height: 80px; max-width: 100%;" alt="Shell Recharge">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_476b0ee38c7ec6979d1362101b03d0c6 = L.marker(
+                [37.79309479736824, -122.40023866641573],
+                {}
+            ).addTo(map_154d0aa0774e5ccb912d95faeb4e806d);
+        
+    
+            var icon_6b4f045a0bceb97a75b49d6a5afa2dee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_476b0ee38c7ec6979d1362101b03d0c6.setIcon(icon_6b4f045a0bceb97a75b49d6a5afa2dee);
+        
+    
+            marker_476b0ee38c7ec6979d1362101b03d0c6.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/drive-download-20241112T212046Z-001/IMG_0401.HEIC" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">BTC L2 70A Single</span> (2B95-01)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    9.6kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://www.cambriancards.com/wp-content/uploads/2020/11/shell-recharge-logo.png" style="max-height: 80px; max-width: 100%;" alt="Shell Recharge">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00caa4409005c780d298ac1dc66aac59 = L.marker(
+                [37.793083636489094, -122.40024369418269],
+                {}
+            ).addTo(map_154d0aa0774e5ccb912d95faeb4e806d);
+        
+    
+            var icon_b23a47e5353f611b3da5bf4c58328f83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_00caa4409005c780d298ac1dc66aac59.setIcon(icon_b23a47e5353f611b3da5bf4c58328f83);
+        
+    
+            marker_00caa4409005c780d298ac1dc66aac59.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/drive-download-20241112T212046Z-001/IMG_8794.jpeg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">BTC L2 70A Single</span> (2B95-03)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    9.6kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://www.cambriancards.com/wp-content/uploads/2020/11/shell-recharge-logo.png" style="max-height: 80px; max-width: 100%;" alt="Shell Recharge">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e34c481f28733ae991c91540cee17108 = L.marker(
+                [37.793066721831345, -122.40030379729006],
+                {}
+            ).addTo(map_154d0aa0774e5ccb912d95faeb4e806d);
+        
+    
+            var icon_588b2eabc660ee27cc568d856aacbbfb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e34c481f28733ae991c91540cee17108.setIcon(icon_588b2eabc660ee27cc568d856aacbbfb);
+        
+    
+            marker_e34c481f28733ae991c91540cee17108.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/drive-download-20241112T212046Z-001/IMG_6477.jpeg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Tesla Gen2 80A</span> (EVSE TSLA 1A)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.4kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://logovent.com/blog/wp-content/uploads/2024/05/Breaking-Down-the-Font-and-Typography.png" style="max-height: 80px; max-width: 100%;" alt="Tesla">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec586d3387410a4d38c9e8aed197e4ee = L.marker(
+                [37.79309570899518, -122.40030809501128],
+                {}
+            ).addTo(map_154d0aa0774e5ccb912d95faeb4e806d);
+        
+    
+            var icon_1af810e1e5908e8201ab51cf9a1994b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ec586d3387410a4d38c9e8aed197e4ee.setIcon(icon_1af810e1e5908e8201ab51cf9a1994b7);
+        
+    
+            marker_ec586d3387410a4d38c9e8aed197e4ee.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/drive-download-20241112T212046Z-001/IMG_0406.HEIC" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Tesla Gen2 80A</span> (EVSE TSLA 1B)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.4kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://logovent.com/blog/wp-content/uploads/2024/05/Breaking-Down-the-Font-and-Typography.png" style="max-height: 80px; max-width: 100%;" alt="Tesla">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7530980dc5d6c26d3734ab67caaf312d = L.marker(
+                [37.793059950109225, -122.40026667355458],
+                {}
+            ).addTo(map_154d0aa0774e5ccb912d95faeb4e806d);
+        
+    
+            var icon_c110d7f84dcd37dd8b73ba443fe1e859 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7530980dc5d6c26d3734ab67caaf312d.setIcon(icon_c110d7f84dcd37dd8b73ba443fe1e859);
+        
+    
+            marker_7530980dc5d6c26d3734ab67caaf312d.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/drive-download-20241112T212046Z-001/IMG_0413.HEIC" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Tesla Gen2 80A</span> (EVSE TSLA 1C)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.4kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://logovent.com/blog/wp-content/uploads/2024/05/Breaking-Down-the-Font-and-Typography.png" style="max-height: 80px; max-width: 100%;" alt="Tesla">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_122f6dc50e07f830132ad0a65a1ac77b = L.marker(
+                [37.793047602455985, -122.40021854397312],
+                {}
+            ).addTo(map_154d0aa0774e5ccb912d95faeb4e806d);
+        
+    
+            var icon_971abbfac5e6d51547ede6096fde6f7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_122f6dc50e07f830132ad0a65a1ac77b.setIcon(icon_971abbfac5e6d51547ede6096fde6f7e);
+        
+    
+            marker_122f6dc50e07f830132ad0a65a1ac77b.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/drive-download-20241112T212046Z-001/IMG_0407.HEIC" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Tesla Gen2 80A</span> (EVSE TSLA 2A)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.4kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://logovent.com/blog/wp-content/uploads/2024/05/Breaking-Down-the-Font-and-Typography.png" style="max-height: 80px; max-width: 100%;" alt="Tesla">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_243639100ad44593a9352033a49140f8 = L.marker(
+                [37.79304539215971, -122.40029420188041],
+                {}
+            ).addTo(map_154d0aa0774e5ccb912d95faeb4e806d);
+        
+    
+            var icon_7d67ae05ff7df17fbc92a73c8b61fdb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_243639100ad44593a9352033a49140f8.setIcon(icon_7d67ae05ff7df17fbc92a73c8b61fdb1);
+        
+    
+            marker_243639100ad44593a9352033a49140f8.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/drive-download-20241112T212046Z-001/IMG_0410.HEIC" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Tesla Gen2 80A</span> (EVSE TSLA 2B)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.4kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://logovent.com/blog/wp-content/uploads/2024/05/Breaking-Down-the-Font-and-Typography.png" style="max-height: 80px; max-width: 100%;" alt="Tesla">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54051482e78976d29dd13dbc478ec800 = L.marker(
+                [37.79304226602061, -122.40024205139679],
+                {}
+            ).addTo(map_154d0aa0774e5ccb912d95faeb4e806d);
+        
+    
+            var icon_c30da929064d84dbebf63ab4852879b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_54051482e78976d29dd13dbc478ec800.setIcon(icon_c30da929064d84dbebf63ab4852879b9);
+        
+    
+            marker_54051482e78976d29dd13dbc478ec800.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/drive-download-20241112T212046Z-001/IMG_0412.HEIC" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Tesla Gen2 80A</span> (EVSE TSLA 3A)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.4kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://logovent.com/blog/wp-content/uploads/2024/05/Breaking-Down-the-Font-and-Typography.png" style="max-height: 80px; max-width: 100%;" alt="Tesla">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_227bf9b93731bac523e1e917396f4e74 = L.marker(
+                [37.793092932118334, -122.40028412366036],
+                {}
+            ).addTo(map_154d0aa0774e5ccb912d95faeb4e806d);
+        
+    
+            var icon_ca022c1a896b00127be602ee0fb4c45a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_227bf9b93731bac523e1e917396f4e74.setIcon(icon_ca022c1a896b00127be602ee0fb4c45a);
+        
+    
+            marker_227bf9b93731bac523e1e917396f4e74.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/drive-download-20241112T212046Z-001/IMG_0411.HEIC" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Tesla Gen2 80A</span> (EVSE TSLA 3B)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.4kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://logovent.com/blog/wp-content/uploads/2024/05/Breaking-Down-the-Font-and-Typography.png" style="max-height: 80px; max-width: 100%;" alt="Tesla">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35f79f462191f54b4f5c67429fed979d = L.marker(
+                [37.793052294448024, -122.40023260880953],
+                {}
+            ).addTo(map_154d0aa0774e5ccb912d95faeb4e806d);
+        
+    
+            var icon_9cb464c7b90d3c6c904ada964e353a56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_35f79f462191f54b4f5c67429fed979d.setIcon(icon_9cb464c7b90d3c6c904ada964e353a56);
+        
+    
+            marker_35f79f462191f54b4f5c67429fed979d.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/metropolis_images/drive-download-20241112T212046Z-001/IMG_0414.HEIC" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Tesla Gen2 80A</span> (EVSE TSLA 3C)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.4kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://logovent.com/blog/wp-content/uploads/2024/05/Breaking-Down-the-Font-and-Typography.png" style="max-height: 80px; max-width: 100%;" alt="Tesla">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
